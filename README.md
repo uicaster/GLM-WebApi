@@ -3,6 +3,7 @@
 OpenAI 兼容的 ChatGLM 网页版 API 代理服务。通过逆向 chatglm.cn 网页版对话接口，将其封装为标准的 OpenAI `/v1/chat/completions` API，支持流式（SSE）和非流式两种响应模式，可直接对接 CodeBuddy、ChatGPT-Next-Web、LobeChat 等客户端。
 
 注意：本项目仅用于学习研究，严禁用于商业用途。
+
 Notice: This project is for learning and research purposes only. Commercial use is strictly prohibited.
 
 ## 目录结构
