@@ -777,8 +777,19 @@ class GLMApiGUI:
         self.log_text.pack(fill="both", expand=True)
 
         # ── Status bar ──
-        self.status_bar = ttk.Label(self.root, text="就绪", relief="sunken", anchor="w", font=("Microsoft YaHei UI", 8))
-        self.status_bar.pack(fill="x", side="bottom")
+        self._footer = ttk.Frame(self.root, relief="sunken", borderwidth=1)
+        self._footer.pack(fill="x", side="bottom")
+        self.status_bar = ttk.Label(self._footer, text="就绪", anchor="w",
+                                     font=("Microsoft YaHei UI", 8))
+        self.status_bar.pack(side="left", padx=(6, 0), pady=2)
+        self.copyright_label = ttk.Label(
+            self._footer,
+            text="版权方：上海市宝山区千语网络科技工作室    v1.1.0 20260720",
+            anchor="e",
+            foreground="gray",
+            font=("Microsoft YaHei UI", 7),
+        )
+        self.copyright_label.pack(side="right", padx=(0, 8), pady=2)
 
     def _toggle_token_visibility(self):
         """Toggle between masked asterisks and real token text.
