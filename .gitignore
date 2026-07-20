@@ -1,0 +1,29 @@
+# ===== 个人配置（含真实 token，勿上传） =====
+config.ini
+
+# ===== 开发日志 / 调试产物 =====
+project_memory.md
+request_debug.log
+
+# ===== Python 缓存 =====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ===== PyInstaller 打包产物 =====
+_internal/
+dist/
+build/
+*.spec
+*.exe
+
+# ===== 运行时缓存 =====
+.glm_api_truncated/
+
+# ===== 系统 / 编辑器 =====
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
