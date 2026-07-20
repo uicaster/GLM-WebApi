@@ -48,7 +48,7 @@ from flask import Flask, Response, request
 from waitress.server import create_server
 
 # ── Config ────────────────────────────────────────────────────
-CONFIG_PATH = os.path.join(BASE_DIR, "config.ini")
+CONFIG_PATH = os.path.join(os.path.dirname(BASE_DIR), "config.ini")
 
 # ── Request logging (for debugging CodeBuddy communication) ───
 DEBUG_LOG = os.path.join(BASE_DIR, "request_debug.log")
