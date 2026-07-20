@@ -79,7 +79,7 @@ pyinstaller --onedir --windowed --icon=app_icon.ico --name=GLM_Api --add-data "s
 
 ### v1.1.0 (2026-07-20)
 
-- GUI 右下角添加版权信息"版权方：上海市宝山区千语网络科技工作室"及版本号 v1.1.0
+- GUI 右下角添加声明信息"本项目仅用于学习研究，严禁用于商业用途。"及版本号 v1.1.0
 - 修复 PyInstaller 打包缺失 `requests` / `flask` 依赖的问题
 - 项目重命名为 GLM-WebApi，整理目录结构（源码统一收进 `GLM-WebApi/`）
 - 上传 GitHub，根目录留存 `GLM-WebApi.rar` 离线备份
